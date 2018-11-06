@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chiru.karthik.basketballscorecounter.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="@string/team_A"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40sp"
+                android:text="@string/score_A"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Points_3_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:width="120sp"
+                android:height="20sp"
+                android:background="@color/Orange_Button"
+                android:onClick="onClick3Points_A"
+                android:text="@string/Points_3"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/Points_2_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:width="120sp"
+                android:height="20sp"
+                android:background="@color/Orange_Button"
+                android:onClick="onClick2Points_A"
+                android:text="@string/Points_2"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/free_Throw_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:width="120sp"
+                android:height="20sp"
+                android:background="@color/Orange_Button"
+                android:onClick="onClickFreePoints_A"
+                android:text="@string/free_Throw" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/Division_line"
+            android:layout_width="1dp"
+            android:layout_height="350sp"
+            android:layout_marginStart="180sp"
+            android:layout_marginTop="20sp"
+            android:background="@color/Line">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_toEndOf="@id/Division_line"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="@string/team_B"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40sp"
+                android:text="@string/score_B"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Points_3_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:width="120sp"
+                android:height="20sp"
+                android:background="@color/Orange_Button"
+                android:onClick="onClick3Points_B"
+                android:text="@string/Points_3"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/Points_2_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:width="120sp"
+                android:height="20sp"
+                android:background="@color/Orange_Button"
+                android:onClick="onClick2Points_B"
+                android:text="@string/Points_2"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/free_Throw_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:width="120sp"
+                android:height="20sp"
+                android:background="@color/Orange_Button"
+                android:onClick="onClickFreePoints_B"
+                android:text="@string/free_Throw" />
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30sp"
+            android:layout_marginStart="135sp"
+            android:layout_below="@id/Division_line"
+            android:background="@color/Orange_Button"
+            android:onClick="onCLickReset"
+            android:text="@string/Reset"
+            android:id="@+id/Reset"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ABOUT"
+            android:onClick="onClickAbout"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="250dp"
+            android:background="@color/Orange_Button"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
